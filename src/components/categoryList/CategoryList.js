@@ -1,14 +1,14 @@
 import './CategoryList.css';
-import {Categoryitem} from './Categoryitem';
+import {Categoryitem} from '../categoryItem/Categoryitem';
 
 export function CategoryList({catalog = []})
 {
     return(
         <div className='list'>
             {
-                catalog.map(el => (
+                catalog.map(el => 
                     <Categoryitem key={el.idCategory} {...el} />
-                ))
+                )
             }
         </div>
     )

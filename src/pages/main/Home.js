@@ -1,7 +1,7 @@
 import './Home.css'
 import { useState, useEffect } from 'react';
 import { getAllCategories } from '../../api';
-import { CategoryList } from '../../components/CategoryList';
+import { CategoryList } from '../../components/categoryList/CategoryList';
 //import Preloader
 
 export function Home() {
