@@ -3,6 +3,7 @@ import './Category.css';
 import { MealList } from './MealList';
 import { useEffect, useState } from 'react';
 import { getFilteredCategory } from '../api';
+import Preloader from './Preloader';
 
 export function Category() {
     const { name } = useParams();
@@ -18,7 +19,11 @@ export function Category() {
 
     return (
         <div className='wrap'>
-            <MealList meals={meals} />
+            {
+                meals != null && meals.length === 0 ?
+                    <Preloader /> :
+                    <MealList meals={meals} />
+            }
             <button className='btn' onClick={goBack} >Go back</button>
         </div>
     )
