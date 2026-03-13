@@ -1,3 +1,7 @@
+.recipe
+{
+    padding: 50px;
+}
 .recipe img
 {
     max-width: 25%;
@@ -60,3 +64,16 @@ table tr:last-child td:last-child
 }
 /* https://dev.to/temmietope/rounded-edges-on-table-rows-1d0n */
 /* Set border-radius on the top-right and bottom-right of the last table data on the table rowtd:last-child,th:last-child {border-radius: 0 10px 10px 0;} */
+
+.video-wrap
+{
+   width: 50%;
+   height: 70vh;
+   margin: 0 auto;
+}
+.video-wrap iframe
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
